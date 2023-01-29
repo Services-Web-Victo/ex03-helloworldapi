@@ -1,5 +1,6 @@
 # Hello World Api
 Api de base avec le framework slim et une connexion MySQL.
+
 Source : https://odan.github.io/2019/11/05/slim4-tutorial.html
 
 ## Installation
@@ -14,18 +15,7 @@ Source : https://odan.github.io/2019/11/05/slim4-tutorial.html
 | Méthodes | Route  | Description                      |
 | -------- | ------ | -------------------------------- |
 | GET      | /      | Message de bienvenue             |
-| GET      | /greetings?langue=[fr,en,es,de]  | Affichage d'un message de bienvenue aléatoire           |
-
-On peut ajouter le paramêtre langue à la route /greetings pour spécifier dans quelle langue on veut avoir notre message. Les valeurs possibles sont : 
-
-- fr : Français
-- en : Anglais
-- es : Espagnol
-- de : Allemand
-
-```
-/greetings?langue=fr
-```
+| GET      | /greetings  | Affichage d'un message de bienvenue aléatoire           |
 
 ## Format des résultats : 
 
