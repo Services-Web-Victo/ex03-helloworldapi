@@ -29,7 +29,11 @@ class GreetingRepository
      */
     public function selectGreetings(): array
     {
-        $sql = "SELECT message, code FROM helloworld ORDER BY RAND() LIMIT 1;";
+        $sql = "
+        SELECT s.message, l.code 
+        FROM salutations s INNER JOIN langages l ON l.id = s.langue_id 
+        ORDER BY RAND() LIMIT 1;
+        ";
 
         $query = $this->connection->prepare($sql);
         $query->execute();
