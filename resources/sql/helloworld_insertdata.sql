@@ -21,7 +21,7 @@ CREATE TABLE `salutations` (
 INSERT INTO `langages`(`id`, `code`, `langue`) 
 VALUES
 	(1, 'fr','Français'),
-	(2, 'en','Englais'),
+	(2, 'en','Anglais'),
 	(3, 'es','Espagnol'),
 	(4, 'de','Allemand');
 
